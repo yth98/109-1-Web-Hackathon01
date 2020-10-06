@@ -65,6 +65,13 @@ body > h1{
     text-align: top;
     vertical-align: top;
 }
+.date:hover{
+    background: var(--hover);
+}
+.date.active-date{
+    background: var(--box);
+    color: var(--text);
+}
 
 /*****************Themes*****************/
 .Theme-black {
@@ -103,6 +110,15 @@ body > h1{
     --bg-1: 255,177,123;
 }
 
+.Theme-custom {
+    --main: rgb(12, 42, 141);
+    --box: rgba(12, 42, 141, 0.781);
+    --text: rgb(255, 213, 97);
+    --hover: rgba(255, 255, 255, 0.267);
+    --bg-0: 255,203,61;
+    --bg-1: 180,240,98;
+}
+
 .ChooseTheme{
     width: 30px;
     height: 30px;
@@ -115,3 +131,4 @@ body > h1{
 #Theme-red{ background-color:rgba(215, 95, 93, 0.5); }
 #Theme-blue{ background-color: rgba(93, 215, 209, 0.5); }
 #Theme-purple{ background-color: rgba(49,46,140, 0.5); }
+#Theme-custom{ background-color: rgba(255, 203, 61, 0.5); }
